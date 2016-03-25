@@ -5,13 +5,13 @@
     <div class="teamMembers">
         {#members}{#.}
         {name}
-        {#yearOfWorkInWeeks}<div class="yearOfWork">
+        <div class="yearOfWork">{#yearOfWorkInWeeks}
             {#week}<div class="week">
                 {#.}<div class="dow">
                     {.}
                 </div>{/.}
             </div>{/week}
-        </div>{/yearOfWorkInWeeks}
+        {/yearOfWorkInWeeks}</div>
         {/.}{/members}
     </div>
 {/body}
