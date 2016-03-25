@@ -2,13 +2,16 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
-    <div class="yearOfWork">
-        {#yow}
+    <div class="teamMembers">
+        {#members}{#.}
+        {name}
+        {#yearOfWorkInWeeks}<div class="yearOfWork">
             {#week}<div class="week">
                 {#.}<div class="dow">
                     {.}
                 </div>{/.}
             </div>{/week}
-        {/yow}
+        </div>{/yearOfWorkInWeeks}
+        {/.}{/members}
     </div>
 {/body}
