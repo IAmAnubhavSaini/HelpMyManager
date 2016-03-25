@@ -1,10 +1,5 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
-    <div>
-        {#yow}
-            {.}
-        {/yow}
-    </div>
+    <a href="./teammatetrack">Team Mate Track</a>
 {/body}

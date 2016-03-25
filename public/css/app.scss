@@ -1,0 +1,24 @@
+.yow {
+  counter-reset: week;
+}
+
+.week {
+    counter-increment: week;
+    counter-reset: dow;
+    padding: 1em;
+    margin: 1em;
+}
+
+.week::before {
+    display: block;
+    content: 'Week ' counter(week) '. ';
+}
+
+.dow {
+    margin: .2em; padding: .2em;
+    counter-increment: dow;
+}
+
+.dow::before {
+    content: 'day ' counter(dow) ': ';
+}

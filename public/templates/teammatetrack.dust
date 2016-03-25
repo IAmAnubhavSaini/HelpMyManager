@@ -1,0 +1,14 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{@pre type="content" key="greeting"/}</h1>
+    <div class="yearOfWork">
+        {#yow}
+            {#week}<div class="week">
+                {#.}<div class="dow">
+                    {.}
+                </div>{/.}
+            </div>{/week}
+        {/yow}
+    </div>
+{/body}

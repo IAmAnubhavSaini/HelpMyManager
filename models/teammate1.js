@@ -1,8 +1,6 @@
 module.exports = {
     name: 'Team Mate',
     yearOfWorkInWeeks: [
-	// Week 0 doesn't make sense
-		['Monday', 'Tuesday', 'Wednessday', 'Thursday', 'Friday'],
 		['', '', '', '', ''], // week 1
 		['', '', '', '', ''],
 		['', '', '', '', ''],
@@ -15,6 +13,11 @@ module.exports = {
 		['', '', '', '', ''],
 		['', '', '', '', ''], // week 11
 		['', '', '', '', ''],
-		['', '', '', '', 'Worked on this app.'] // week 13
-    ]
+		['', '', '', '1. Read about kraken-js and lusca code.', '1. Worked on this app. 2. Contributed to kraken-js'] // week 13
+    ],
+    week: function(chunk, context, bodies){
+        return chunk.map(function(chunk){
+            chunk.render(bodies.block, context).end();
+        });
+    }
 };
